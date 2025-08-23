@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Produtos — Preciosa Joias</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body id="topo" data-whatsapp="+5599999999999" data-nome-loja="Preciosa Joias">
+  <header class="navbar">
+    <div class="logo"><img src="img/shared image.jpeg" alt=""><span>Preciosa</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a class="active" href="produtos.html">Produtos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><button id="btnCart" class="btn-carrinho">🛍 <span id="cart-count" class="badge">0</span></button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="sec-title" style="text-align:center;margin-top:20px;">Catálogo Completo</h1>
+
+    <!-- FILTROS -->
+    <div class="filters">
+      <input id="search" type="search" placeholder="Buscar produto..." />
+      <select id="filter-cat">
+        <option value="all">Todas categorias</option>
+        <option value="anel">Anéis</option>
+        <option value="brinco">Brincos</option>
+        <option value="colar">Colares</option>
+        <option value="pulseira">Pulseiras</option>
+      </select>
+      <select id="sort">
+        <option value="pop">Ordenar</option>
+        <option value="price-asc">Menor preço</option>
+        <option value="price-desc">Maior preço</option>
+      </select>
+    </div>
+
+    <!-- GRID -->
+    <section id="catalog-grid" class="cards grid-produtos" style="padding-bottom:40px;">
+      <!-- Exemplo de card (repita com seus produtos) -->
+      <article class="card produto" data-card="produto" data-id="sku-anel-royal" data-nome="Anel Royal Rose" data-preco="590" data-cat="anel" data-img="../img/produtos/anel2.jpg" data-quick>
+        <img src="../img/produtos/anel2.jpg" alt="Anel Royal Rose">
+        <h3>Anel Royal Rose</h3>
+        <p class="price" data-preco="590">R$ 590,00</p>
+        <div class="actions">
+          <button class="btn-secondary" data-add data-id="sku-anel-royal" data-nome="Anel Royal Rose" data-preco="590" data-img="../img/produtos/anel2.jpg">Comprar</button>
+          <a class="btn" href="produto.html?id=sku-anel-royal">Detalhes</a>
+        </div>
+      </article>
+
+      <article class="card produto" data-card="produto" data-id="sku-colar-sun" data-nome="Colar Sun Kiss" data-preco="430" data-cat="colar" data-img="../img/produtos/colar2.jpg" data-quick>
+        <img src="../img/produtos/colar2.jpg" alt="Colar Sun Kiss">
+        <h3>Colar Sun Kiss</h3>
+        <p class="price" data-preco="430">R$ 430,00</p>
+        <div class="actions">
+          <button class="btn-secondary" data-add data-id="sku-colar-sun" data-nome="Colar Sun Kiss" data-preco="430" data-img="../img/produtos/colar2.jpg">Comprar</button>
+          <a class="btn" href="produto.html?id=sku-colar-sun">Detalhes</a>
+        </div>
+      </article>
+
+      <article class="card produto" data-card="produto" data-id="sku-brinco-aurum" data-nome="Brinco Aurum" data-preco="310" data-cat="brinco" data-img="../img/produtos/brinco1.jpg" data-quick>
+        <img src="../img/produtos/brinco1.jpg" alt="Brinco Aurum">
+        <h3>Brinco Aurum</h3>
+        <p class="price" data-preco="310">R$ 310,00</p>
+        <div class="actions">
+          <button class="btn-secondary" data-add data-id="sku-brinco-aurum" data-nome="Brinco Aurum" data-preco="310" data-img="../img/produtos/brinco1.jpg">Comprar</button>
+          <a class="btn" href="produto.html?id=sku-brinco-aurum">Detalhes</a>
+        </div>
+      </article>
+
+      <article class="card produto" data-card="produto" data-id="sku-pulseira-estrela" data-nome="Pulseira Estrela Dourada" data-preco="380" data-cat="pulseira" data-img="../img/produtos/pulseira2.jpg" data-quick>
+        <img src="../img/produtos/pulseira2.jpg" alt="Pulseira Estrela Dourada">
+        <h3>Pulseira Estrela Dourada</h3>
+        <p class="price" data-preco="380">R$ 380,00</p>
+        <div class="actions">
+          <button class="btn-secondary" data-add data-id="sku-pulseira-estrela" data-nome="Pulseira Estrela Dourada" data-preco="380" data-img="../img/produtos/pulseira2.jpg">Comprar</button>
+          <a class="btn" href="produto.html?id=sku-pulseira-estrela">Detalhes</a>
+        </div>
+      </article>
+
+      <article class="card produto" data-card="produto" data-id="sku-colar-pearl" data-nome="Colar Pérola Rose" data-preco="490" data-cat="colar" data-img="../img/produtos/colar3.jpg" data-quick>
+        <img src="../img/produtos/colar3.jpg" alt="Colar Pérola Rose">
+        <h3>Colar Pérola Rose</h3>
+        <p class="price" data-preco="490">R$ 490,00</p>
+        <div class="actions">
+          <button class="btn-secondary" data-add data-id="sku-colar-pearl" data-nome="Colar Pérola Rose" data-preco="490" data-img="../img/produtos/colar3.jpg">Comprar</button>
+          <a class="btn" href="produto.html?id=sku-colar-pearl">Detalhes</a>
+        </div>
+      </article>
+
+      <article class="card produto" data-card="produto" data-id="sku-anel-crown" data-nome="Anel Crown" data-preco="640" data-cat="anel" data-img="../img/produtos/anel3.jpg" data-quick>
+        <img src="../img/produtos/anel3.jpg" alt="Anel Crown">
+        <h3>Anel Crown</h3>
+        <p class="price" data-preco="640">R$ 640,00</p>
+        <div class="actions">
+          <button class="btn-secondary" data-add data-id="sku-anel-crown" data-nome="Anel Crown" data-preco="640" data-img="../img/produtos/anel3.jpg">Comprar</button>
+          <a class="btn" href="produto.html?id=sku-anel-crown">Detalhes</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Preciosa Joias — Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- FAB / WHATS / DRAWER / MODAL -->
+  <div class="fab"><button class="fab-main">✦</button><div class="fab-menu"><a class="fab-item fab-whats" id="wa-fab" href="#" target="_blank">WhatsApp</a><a class="fab-item" href="#topo" id="btn-topo">Topo</a></div></div>
+  
+  <div id="drawer" class="drawer" aria-hidden="true"></div>
+  <div id="modal" class="modal" aria-hidden="true"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

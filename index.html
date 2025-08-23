@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Preciosa Joias — Início</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/shared image.jpeg">
+</head>
+
+<body id="topo" data-whatsapp="+5599999999999" data-nome-loja="Preciosa Joias">
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="img/shared image.jpeg" alt="Preciosa Joias" />
+            <span>Preciosa</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li>
+                    <button id="btnCart" class="btn-carrinho" aria-label="Abrir carrinho">
+                        🛍 Carrinho <span id="cart-count" class="badge">0</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Brilhe com elegância dourada</h1>
+            <p>Joias com banho premium, design autoral e acabamento impecável.</p>
+            <a class="btn-primary" href="produtos.html">Ver coleção</a>
+        </div>
+    </section>
+
+    <!-- DESTAQUES -->
+    <section class="destaques">
+        <h2>Peças em destaque</h2>
+        <div class="cards">
+            <article class="card" data-quick data-id="sku-colar-aurora" data-nome="Colar Aurora Rose" data-preco="420"
+                data-cat="colar" data-img="../img/produtos/colar1.jpg">
+                <img src="../img/produtos/colar1.jpg" alt="Colar Aurora Rose">
+                <h3>Colar Aurora Rose</h3>
+                <p class="price">R$ 420,00</p>
+                <div class="actions">
+                    <button class="btn-secondary" data-add data-id="sku-colar-aurora" data-nome="Colar Aurora Rose"
+                        data-preco="420" data-img="../img/produtos/colar1.jpg">Comprar</button>
+
+                </div>
+            </article>
+
+            <article class="card" data-quick data-id="sku-anel-divine" data-nome="Anel Divine Gold" data-preco="580"
+                data-cat="anel" data-img="../img/produtos/anel1.jpg">
+                <img src="../img/produtos/anel1.jpg" alt="Anel Divine Gold">
+                <h3>Anel Divine Gold</h3>
+                <p class="price">R$ 580,00</p>
+                <div class="actions">
+                    <button class="btn-secondary" data-add data-id="sku-anel-divine" data-nome="Anel Divine Gold"
+                        data-preco="580" data-img="../img/produtos/anel1.jpg">Comprar</button>
+
+                </div>
+            </article>
+
+            <article class="card" data-quick data-id="sku-pulseira-luna" data-nome="Pulseira Luna Pearl"
+                data-preco="360" data-cat="pulseira" data-img="../img/produtos/pulseira1.jpg">
+                <img src="../img/produtos/pulseira1.jpg" alt="Pulseira Luna Pearl">
+                <h3>Pulseira Luna Pearl</h3>
+                <p class="price">R$ 360,00</p>
+                <div class="actions">
+                    <button class="btn-secondary" data-add data-id="sku-pulseira-luna" data-nome="Pulseira Luna Pearl"
+                        data-preco="360" data-img="../img/produtos/pulseira1.jpg">Comprar</button>
+
+            </article>
+        </div>
+    </section>
+
+    <!-- CONFIANÇA -->
+    <section class="confianca">
+        <div class="item">
+            <i>🚚</i>
+            <h3>Envio Rápido</h3>
+            <p>Brasil inteiro com rastreio.</p>
+        </div>
+        <div class="item">
+            <i>🛡️</i>
+            <h3>Garantia</h3>
+            <p>Banho premium hipoalergênico.</p>
+        </div>
+        <div class="item">
+            <i>💳</i>
+            <h3>Pagamento Seguro</h3>
+            <p>Cartão e Pix via Whats.</p>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <h2>Ganhe 10% OFF na primeira compra</h2>
+        <form>
+            <input type="email" placeholder="Seu e-mail" required>
+            <button class="btn-primary" type="submit">Assinar</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Preciosa Joias — Todos os direitos reservados.</p>
+        <p><a href="sobre.html">Sobre</a> • <a href="contato.html">Contato</a></p>
+    </footer>
+
+    <!-- FAB + WHATS + DRAWER + MODAL -->
+    <div class="fab">
+        <button class="fab-main" aria-label="Abrir ações">✦</button>
+        <div class="fab-menu">
+            <a class="fab-item fab-whats" id="wa-fab" href="#" target="_blank" aria-label="WhatsApp">WhatsApp</a>
+            <a class="fab-item" href="#topo" id="btn-topo" aria-label="Voltar ao topo">Topo</a>
+        </div>
+    </div>
+
+    <div id="drawer" class="drawer" aria-hidden="true"></div>
+    <div id="modal" class="modal" aria-hidden="true"></div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

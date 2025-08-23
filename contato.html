@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato — Preciosa Joias</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="topo" data-whatsapp="+5599999999999" data-nome-loja="Preciosa Joias">
+  <header class="navbar">
+    <div class="logo"><img src="img/shared image.jpeg" alt=""><span>Preciosa</span></div>
+    <nav><ul>
+      <li><a href="index.html">Início</a></li><li><a href="produtos.html">Produtos</a></li><li><a href="sobre.html">Sobre</a></li>
+      <li><a class="active" href="contato.html">Contato</a></li>
+      <li><button id="btnCart" class="btn-carrinho">🛍 <span id="cart-count" class="badge">0</span></button></li>
+    </ul></nav>
+  </header>
+
+  <section class="contato container">
+    <h1>Fale com a gente</h1>
+    <form class="form-contato">
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+      <button class="btn-primary" type="submit">Enviar</button>
+    </form>
+    <p style="text-align:center;margin-top:10px;">ou</p>
+    <p style="text-align:center;"><a class="btn" data-whats="Olá! Vim do site e quero atendimento.">Chamar no WhatsApp</a></p>
+  </section>
+
+  <footer><p>© 2025 Preciosa Joias.</p></footer>
+
+  <div class="fab"><button class="fab-main">✦</button><div class="fab-menu"><a class="fab-item fab-whats" id="wa-fab" href="#" target="_blank">WhatsApp</a><a class="fab-item" href="#topo" id="btn-topo">Topo</a></div></div>
+
+  <div id="drawer" class="drawer" aria-hidden="true"></div>
+  <div id="modal" class="modal" aria-hidden="true"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
